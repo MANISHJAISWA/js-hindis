@@ -10,12 +10,12 @@ let userName;
 const id = Symbol('123');
 
 const anotherId = Symbol('123');
-console.log(id);
-console.log(anotherId);
-console.log(id == anotherId);
+// console.log(id);
+// console.log(anotherId);
+// console.log(id == anotherId);
 
 const bigNumber = 7834727382923234342334n
-console.log(bigNumber)
+// console.log(bigNumber)
 
 
 // Non premitive/ refernce type : Array, Objects, functions
@@ -30,7 +30,7 @@ let myObj = {
 }
 
 function printhello(){
-    console.log("Hello");
+    // console.log("Hello");
 }
 printhello()
 
@@ -43,7 +43,31 @@ myfunction()
 
 
 
-console.log(typeof num);
-console.log(typeof heros);
-console.log(typeof outsidetemp);
+// console.log(typeof num);
+// console.log(typeof heros);
+// console.log(typeof outsidetemp);
 console.log(typeof myfunction);
+
+
+//   *******************************MEMORY****************************************
+
+//stack(primitive)
+//heap(Non primitive )
+
+let myYoutubeName = "manish.com"
+let anotherName = myYoutubeName
+anotherName = "chai aur code"
+console.log(myYoutubeName)
+console.log(anotherName)
+
+
+let userOne = {
+    email: "user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "manish@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
